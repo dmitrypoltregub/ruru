@@ -73,6 +73,12 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
         ],
+        'card_tokens' => [
+            'driver' => 'daily',
+            'path' => storage_path('logs/card_tokens.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+        ],
 
         'slack' => [
             'driver' => 'slack',

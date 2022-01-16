@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class CardData extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'pan',
+        'cvc',
+        'cardholder',
+        'expire',
+        'tokenExpire'
+    ];
+
 }
